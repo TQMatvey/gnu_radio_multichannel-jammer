@@ -152,7 +152,7 @@ blocks:
     ant8: ''
     ant9: ''
     args: '""'
-    bb_gain0: '20'
+    bb_gain0: '30'
     bb_gain1: '20'
     bb_gain10: '20'
     bb_gain11: '20'
@@ -289,7 +289,7 @@ blocks:
     freq7: 100e6
     freq8: 100e6
     freq9: 100e6
-    gain0: '30'
+    gain0: '40'
     gain1: '30'
     gain10: '10'
     gain11: '10'
