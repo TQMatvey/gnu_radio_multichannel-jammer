@@ -65,7 +65,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '32000'
+    value: 1e6
   states:
     bus_sink: false
     bus_source: false
@@ -78,7 +78,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    amp: '10'
+    amp: '100'
     comment: ''
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -152,7 +152,7 @@ blocks:
     ant8: ''
     ant9: ''
     args: '""'
-    bb_gain0: '30'
+    bb_gain0: '60'
     bb_gain1: '20'
     bb_gain10: '20'
     bb_gain11: '20'
@@ -289,7 +289,7 @@ blocks:
     freq7: 100e6
     freq8: 100e6
     freq9: 100e6
-    gain0: '40'
+    gain0: '60'
     gain1: '30'
     gain10: '10'
     gain11: '10'
@@ -321,7 +321,7 @@ blocks:
     gain7: '10'
     gain8: '10'
     gain9: '10'
-    if_gain0: '30'
+    if_gain0: '47'
     if_gain1: '20'
     if_gain10: '20'
     if_gain11: '20'

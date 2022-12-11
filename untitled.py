@@ -77,7 +77,7 @@ class untitled(gr.top_block, Qt.QWidget):
         # Variables
         ##################################################
         self.fun_prob = fun_prob = 0
-        self.samp_rate = samp_rate = 32000
+        self.samp_rate = samp_rate = 1e6
         self.current_freq = current_freq = sweeper.sweep(fun_prob)
 
         ##################################################
@@ -92,9 +92,9 @@ class untitled(gr.top_block, Qt.QWidget):
         self.osmosdr_sink_0.set_sample_rate(samp_rate)
         self.osmosdr_sink_0.set_center_freq(current_freq, 0)
         self.osmosdr_sink_0.set_freq_corr(0, 0)
-        self.osmosdr_sink_0.set_gain(30, 0)
-        self.osmosdr_sink_0.set_if_gain(30, 0)
-        self.osmosdr_sink_0.set_bb_gain(20, 0)
+        self.osmosdr_sink_0.set_gain(60, 0)
+        self.osmosdr_sink_0.set_if_gain(47, 0)
+        self.osmosdr_sink_0.set_bb_gain(60, 0)
         self.osmosdr_sink_0.set_antenna('', 0)
         self.osmosdr_sink_0.set_bandwidth(24e6, 0)
         def _fun_prob_probe():
@@ -113,7 +113,7 @@ class untitled(gr.top_block, Qt.QWidget):
         _fun_prob_thread.daemon = True
         _fun_prob_thread.start()
         self.analog_sig_source_x_0 = analog.sig_source_c(samp_rate, analog.GR_CONST_WAVE, 0, 1, 0, 0)
-        self.analog_noise_source_x_0 = analog.noise_source_c(analog.GR_GAUSSIAN, 10, 0)
+        self.analog_noise_source_x_0 = analog.noise_source_c(analog.GR_GAUSSIAN, 100, 0)
 
 
         ##################################################
